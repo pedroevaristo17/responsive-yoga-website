@@ -96,7 +96,7 @@
     margin-top: 20px;
 }
 .visual-button2 {
-    width: 163px;
+    width: 25%;
     background: linear-gradient(to right, #FF52AF, #9F53FF);
     height: 56px;
     border-radius: 64px;
@@ -111,15 +111,50 @@
 
 .follow-section {
     display: flex;
-    padding-top: 200px;
+    padding: 140px 160px 0;
     background-color: #E5D9FD;
     justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 .follow-div {
     display: flex;
     align-items: center;
+    
 }
 .follow-div h1 {
-    font-size: ;
+    font-size: 90px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.visual-button3 {
+    margin-left: calc(50% - 44px);
+    width: 88px;
+    height: 88px;
+    border-radius: 64px;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+}
+.follow-img-div {
+    display: flex;
+    
+}
+
+.newsletter-section {
+    margin-top: 100px;
+}
+
+span {
+    color: rgb(192, 71, 194)
 }
