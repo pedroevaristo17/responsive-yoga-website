@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", "Lora" sans-serif;
+}
+
+html {
+    height: auto !important;
+}
+
+:root {
+    --bg-color: #f8f0fd;
+    --bg-text: #220953;
+    --icon: url("../assets/images/header/ri_moon-line.png");
+    --bs-color: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+body:has(#checkBox:checked) {
+    --bg-color: #14092a;
+    --bg-text: #d1c0f1;
+    --icon: url("../assets/images/header/sun.png");
+    --bs-color: 0px 5px 10px rgba(255, 255, 255, 1);
+}
+
+#checkBox {
+    display: none;
+}
+
+body {
+    width: 100%;
+    transition: background 0.3s, color 0.3s;
+    background-color: var(--bg-color);
+    color: var(--bg-text);
+}
+
+/* ---------------------------- header Section -------------------------------- */
+
+.header {
+    width: 100%;
+    height: 77px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .headerNav .headerUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    color: var(--bg-text);
+}
+
+.headerUl .dropdown a {
+    color: var(--bg-text);
+}
+
+.header .headerNav .dropdown {
+    font-size: 16px;
+    color: var(--bg-text);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header .headerNav .dropdown {
+    position: relative;
+}
+
+.dropdown #service-menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 2;
+    padding: 3px 10px;
+    background-color: var(--bg-color);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2vh);
+    transition: opacity 0.5s, transform 0.3s;
+    box-shadow: var(--bs-color);
+}
+
+#service-menu a {
+    display: block;
+    white-space: nowrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dropdown:hover #service-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown,
+.mobilemenuSection a:hover {
+    background: linear-gradient(to right, #ff52af 0%, #9f53ff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dropdown a:active {
+    color: var(--bg-text);
+}
+
+.header .headerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .headerRight .mobilemenuSection {
+    display: none;
+}
+
+.header .moonImage {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.moonImage .checkboxBtn {
+    background: var(--icon) no-repeat center / contain !important;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 99;
+    display: block;
+    height: 24px;
+}
+
+.checkboxBtn:hover {
+    transform: translateY(-3px);
+}
+
+.header .homeMenu {
+    display: none;
+}
+
+/* ------------------------- section-1 ----------------------------- */
+
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 96px;
+    margin-top: 38px;
+}
+
+.section-1 .titleContainer {
+    padding-top: 120px;
+    padding-left: 124px;
+    position: relative;
+}
+
+.section-1 .titleContainer .titleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 32px;
+}
+
+.section-1 .titleContainer .titleSection h1 {
+    font-family: "Lora", serif;
+    font-size: 6rem;
+    line-height: 130%;
+    font-weight: 600;
+    color: var(--bg-text);
+    width: 588px;
+    height: 375px;
+}
+
+.section-1 .titleContainer .titleSection .titleDifferent {
+    background: linear-gradient(90deg, #ff52af 0%, #9f53ff 100%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 16px;
+    transform: rotate(10deg);
+    margin-right: 30px;
+    display: inline-block;
+    font-family: "Lora", serif;
+}
+
+.section-1 .titleContainer .titleSection p {
+    font-size: 16px;
+    width: 417px;
+}
+
+.section-1 .titleContainer .homeCircle {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 100px;
+    top: 483px;
+}
+
+.section-1 .titleContainer .titlecontainerBtn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.titlecontainerBtn button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(to right, #ff52af 0%, #9f53ff 100%);
+    padding: 16px 28px 16px 28px;
+    color: #ffffff;
+    border: none;
+    border-radius: 64px;
+    font-size: 16px;
+}
+
+.titleContainer .numberContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+.numberContainer h2 {
+    font-family: "Lora", serif;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.numberContainer p {
+    font-size: 14px;
+}
+
+.section-1 .homeyogaImage {
+    margin-right: 53px;
+    width: 600px;
+    height: 802.2px;
+}
+
+/* --------------------------------- section-2 --------------------------------------- */
+
+.section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    /* margin: 48px 0px; */
+}
+
+.section-2 .leftContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+}
+
+.section-2 .leftContainer h2 {
+    font-size: 56px;
+    font-weight: 400;
+    color: var(--bg-text);
+    font-family: "Lora", serif;
+}
+
+.section-2 .rightContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.section-2 .rightContainer .explanationContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 353px;
+    height: 113px;
+    align-items: center;
+}
+
+.rightContainer .explanationContainer .listStar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: inherit;
+    width: 64px;
+    height: 72.86px;
+}
+
+.explanationContainer p {
+    font-size: 16px;
+    position: absolute;
+    top: 41px;
+    left: 25px;
+}
+
+.rightContainer .nextbtnContainer button {
+    border: none;
+    outline: none;
+    background-color: var(--bg-color);
+}
+
+@media screen and (max-width: 376px) {
+    html {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Poppins", "Lora" sans-serif;
+    }
+
+    body {
+        width: 100%;
+        transition: background 0.3s, color 0.3s;
+        background-color: var(--bg-color);
+        color: var(--bg-text);
+    }
+
+    /* ------------------------- header ------------------------------- */
+
+    .header {
+        width: 100%;
+        height: 56px;
+    }
+
+    .header .headerNav {
+        display: none;
+    }
+
+    .header .moonImage,
+    .homeMenu {
+        display: block;
+    }
+
+    .header .headerRight {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .header .headerRight .mobileMenu {
+        display: block;
+    }
+
+    /* ------------------------ section-1 -------------------------------- */
+
+    .section-1,
+    .section-2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-1 {
+        margin-top: 0px;
+    }
+
+    .section-1 .titleContainer {
+        margin: 40px 24px 0px 24px;
+        padding: 0px;
+        width: 328px;
+        height: 433px;
+        text-align: center;
+        position: relative;
+    }
+
+    .section-1 .titleContainer .inline {
+        width: 52px;
+        height: 52px;
+    }
+
+    .section-1 .titleContainer .titleSection h1 {
+        font-size: 44px;
+        width: 284px;
+        height: 177px;
+        text-align: center;
+    }
+
+    .section-1 .titleContainer .titleSection p {
+        width: 328px;
+        font-size: 15px;
+    }
+
+    .section-1 .titleContainer .homeCircle {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 263px;
+        top: 260px;
+    }
+
+    .section-1 .homeyogaImage {
+        width: 320px;
+        height: 427.84px;
+        margin: 0;
+    }
+
+    .section-1 .homeyogaImage {
+        text-align: center;
+    }
+
+    .section-1 .homeyogaImage .homeYoga {
+        width: 320px;
+        height: 427.84px;
+        margin: auto;
+        margin: 0px 28px;
+    }
+
+    .titlecontainerBtn {
+        margin-bottom: 32px !important;
+    }
+
+    .titlecontainerBtn,
+    .numberContainer {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .numberContainer h2 {
+        font-size: 28px;
+    }
+
+    .numberContainer p {
+        font-size: 13px;
+    }
+
+    /* ----------------------------- section-2 ---------------------------------- */
+
+    .section-2 .leftContainer {
+        width: 307px;
+        height: 125px;
+    }
+
+    .section-2 .leftContainer h2 {
+        font-size: 28px;
+    }
+
+    .leftContainer .listyogaImage .listYoga {
+        width: 230px;
+        height: 125px;
+    }
+
+    .section-2 .rightContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rightContainer .explanationContainer .listStar {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        z-index: inherit;
+        width: 50px;
+        height: 56px;
+    }
+}
