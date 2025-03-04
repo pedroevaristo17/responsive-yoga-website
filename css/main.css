@@ -174,7 +174,8 @@ body {
     line-height: 130%;
     font-weight: 600;
     color: var(--bg-text);
-    width: 588px;
+    max-width: 588px;
+    width: 100%;
     height: 375px;
 }
 
@@ -239,7 +240,8 @@ body {
 
 .section-1 .homeyogaImage {
     margin-right: 53px;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 802.2px;
 }
 
@@ -307,7 +309,310 @@ body {
     background-color: var(--bg-color);
 }
 
-@media screen and (max-width: 376px) {
+.happiness-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.image-div {
+    display: flex;
+    margin-left: 80px;
+    
+}
+.image-div img {
+    justify-content: flex-end;
+}
+
+.visual-div {
+    text-align: left;
+    margin-left: 20px;
+    flex-direction: column;
+    gap: 200px;
+    
+}
+.visual-div h1 {
+    font-size: 90px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    flex-wrap: wrap;
+}
+
+.visual-div p {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.visual-button {
+    width: 163px;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    height: 56px;
+    border-radius: 64px;
+    margin-top: 20px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    
+}
+.workout-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.visual-div2 {
+    width:50%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.visual-div2 h1 {
+    font-size: 90px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.visual-div2 p {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.visual-button2 {
+    width: 25%;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    height: 56px;
+    border-radius: 64px;
+    margin-top: 20px;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+}
+
+.follow-section {
+    display: flex;
+    padding: 140px 160px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.follow-div {
+    display: flex;
+    align-items: center;
+    
+}
+.follow-div h1 {
+    font-size: 90px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.visual-button3 {
+    margin-left: calc(50% - 44px);
+    width: 88px;
+    height: 88px;
+    border-radius: 64px;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+}
+.follow-img-div {
+    display: flex;
+    
+}
+
+.newsletter-section {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-div {
+    max-width: 992px;
+    width: 100%;
+    max-height: 374px;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+    border-radius: 32px;
+}
+
+.newsletter-div h1 {
+    font-size: 56px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 100px;
+}
+
+.newsletter-div p {
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.input-container {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.input-container input {
+    width: 528px;
+    border-radius: 32px;
+    height: 72px;
+    color: grey;
+}
+.input-container input::placeholder {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 20px;
+}
+
+
+.input-container button {
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 165px;
+    height: 56px;
+    border-radius: 32px;
+    position: absolute;
+    top: 9px;
+    right: 10px;   
+}
+
+.footer-container {
+    width: 100%;
+    height: 391px;
+    margin-top: 20px;
+    background-color: #1E0849;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    
+}
+
+.footer-div {
+    
+    margin-top: 70px;
+    flex-direction: column;
+    display: flex;
+    gap: 20%;
+    width: 75%;
+}
+
+.top-div {
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.address-div h2, .contact-div h2, .office-div h2 {
+    font-size: 24px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.yoga-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 100px;
+    
+}
+.yoga-div h2 {
+    font-size: 24px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #FF52AF;
+
+}
+
+.yoga-div p, .address-div p, .contact-div p, .office-div p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #A197B4;
+}
+.address-div, .contact-div, .office-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.bottom-div {
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.icons-div {
+    display: flex;
+    gap: 30px;
+    margin-left: 5%;
+    color: #FF52AF;
+
+}
+
+.bottom-div p {
+    color: #A197B4;
+}
+
+span {
+    color: rgb(192, 71, 194)
+}
+
+button {
+    border: none;
+}
+
+@media screen and (max-width: 425px) {
     html {
         box-sizing: border-box;
         padding: 0;
@@ -464,5 +769,271 @@ body {
         z-index: inherit;
         width: 50px;
         height: 56px;
+    }
+    .happiness-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .visual-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .visual-div h1 {
+        font-size: 32px;
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+    
+    }
+    .visual-div p {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .visual-button {
+        width: 163px;
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        height: 56px;
+        border-radius: 64px;
+        margin-top: 20px;
+        color: white;
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        border: none;   
+    }
+    
+    .visual-div2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .visual-div2 h1 {
+        font-size: 40px;
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .visual-div2 p {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .visual-button2 {
+        width: 163px;
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        height: 56px;
+        border-radius: 64px;
+        margin-top: 20px;
+        color: white;
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        border: none;   
+    }
+    .follow-div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    .follow-div img {
+        max-width: 140px;
+    }
+    .follow-div h1 {
+        font-size: 32px;
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .textAndButton {
+        order: -1; /* Faz com que fique primeiro */
+    }
+    
+    .visual-button3 {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        height: 88px;
+        max-width: 88px;
+        width: 100%;
+        border-radius: 64px;
+        margin-top: 20px;
+        color: white;
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        border: none;   
+    }
+    .first-image {
+        margin-left: 60px;
+    }
+    .second-image {
+        left: 210px;
+        position: absolute;
+        bottom: -40px;
+    }
+    
+    .follow-img-div {
+        margin-bottom: 20px;
+    }
+    .fourth-image {
+        padding-left: 160px;
+    }
+    .follow-img-div img {
+        max-width: 230px;
+        width: 100%;
+    }
+    .newsletter-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#E5D9FD;
+    }
+    .newsletter-div {
+        max-width: 328px;
+        width: 100%;
+        max-height: 450px;
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        color: white;
+        border-radius: 32px;
+        gap: 20px;
+    }
+    .newsletter-div h1 {
+        font-size: 28px;
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+    }
+    .newsletter-div p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
+    
+    .input-container {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .input-container input {
+        max-width: 296px;
+        border-radius: 32px;
+        height: 72px;
+        color: grey;
+    }
+    .input-container input::placeholder {
+        font-size: 13px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        padding-left: 20px;
+    }
+    
+    
+    .input-container button {
+        background: linear-gradient(to right, #FF52AF, #9F53FF);
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        max-width: 296px;
+        border-radius: 32px;
+        height: 72px;
+    }
+    .footer-container {
+        margin-top: 20px;
+        background-color: #1E0849;
+        color: white;
+        width: 100%;
+        height: auto;
+    }
+    .footer-div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0 0 20px
+    }
+    .top-div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .bottom-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px
+    }
+    .icons-div {
+        display: flex;
+        gap: 20px;
+        color: #FF52AF;
+    }
+    .yoga-div h2 {
+        font-size: 24px;
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: #FF52AF;
+    
+    }
+    .address-div h2, .contact-div h2, .office-div h2 {
+        font-size: 24px;
+        font-family: "Lora", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .yoga-div p, .address-div p, .contact-div p, .office-div p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #A197B4;
+    }
+    .bottom-div p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #A197B4;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    hr {
+        width: 94%;
     }
 }
