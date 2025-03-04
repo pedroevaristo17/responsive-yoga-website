@@ -514,7 +514,7 @@ button {
     }
     
     .input-container input {
-        width: 296px;
+        max-width: 296px;
         border-radius: 32px;
         height: 72px;
         color: grey;
@@ -534,7 +534,7 @@ button {
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-style: normal;
-        width: 296px;
+        max-width: 296px;
         border-radius: 32px;
         height: 72px;
     }
